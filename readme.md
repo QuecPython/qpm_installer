@@ -1,5 +1,7 @@
 # QuecPython Project Manager User Guide
 
+English | [中文](./readme_zh.md)
+
 ## Overview
 
 - This package manager is based on a git repository and can access repositories under the QuecPython organization or other specified organizations on GitHub.

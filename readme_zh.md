@@ -1,6 +1,8 @@
 
 # QuecPython Project Manager 使用文档
 
+中文| [English](./readme.md)
+
 ## 概述
 
 - 该包管理以 git 仓库为基础，可以访问 QuecPython 组织或其它指定组织下的 github 仓库。
