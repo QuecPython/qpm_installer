@@ -1,7 +1,7 @@
 
 # QuecPython Project Manager 使用文档
 
-中文| [English](./readme.md)
+中文 | [English](./readme.md)
 
 ## 概述
 
@@ -39,9 +39,9 @@ qpm [help|-h,--help]
 qpm new [-h] [-u URL] proj_name
 ```
 
-**-h, --help**: 显示 `new` 命令的帮助信息。
-**-u, --upstream URL**: 添加远程仓库的 URL（可选）。
-**proj_name**: 项目名称。
+**-h, --help**: 显示 `new` 命令的帮助信息。  
+**-u, --upstream URL**: 添加远程仓库的 URL（可选）。  
+**proj_name**: 项目名称。  
 
 ### 初始化当前目录为 QuecPython 项目
 
@@ -49,8 +49,8 @@ qpm new [-h] [-u URL] proj_name
 qpm init [-h] [-u URL]
 ```
 
-**-h, --help**: 显示 `init` 命令的帮助信息。
-**-u, --upstream URL**: 添加远程仓库的 URL（可选）。
+**-h, --help**: 显示 `init` 命令的帮助信息。  
+**-u, --upstream URL**: 添加远程仓库的 URL（可选）。  
 
 ### 导入项目
 
@@ -58,9 +58,9 @@ qpm init [-h] [-u URL]
 qpm import [-h] [-v version] proj_name_or_url
 ```
 
-**-h, --help**: 显示 `import` 命令的帮助信息。
-**-v, --version version**: 项目版本（可选）。
-**proj_name_or_url**: 项目名称或 URL。
+**-h, --help**: 显示 `import` 命令的帮助信息。  
+**-v, --version version**: 项目版本（可选）。  
+**proj_name_or_url**: 项目名称或 URL。  
 
 ### 添加依赖包
 
@@ -68,10 +68,10 @@ qpm import [-h] [-v version] proj_name_or_url
 qpm add [-h] [-v version] pkg_name_or_url path
 ```
 
-**-h, --help**: 显示 `add` 命令的帮助信息。
-**-v, --version version**: 包版本（可选）。
-**pkg_name_or_url**: 包名称或 URL。
-**path**: 包路径。
+**-h, --help**: 显示 `add` 命令的帮助信息。  
+**-v, --version version**: 包版本（可选）。  
+**pkg_name_or_url**: 包名称或 URL。  
+**path**: 包路径。  
 
 ### 移除依赖包
 
@@ -79,8 +79,8 @@ qpm add [-h] [-v version] pkg_name_or_url path
 qpm remove [-h] [pkg_path]
 ```
 
-**-h, --help**: 显示 `remove` 命令的帮助信息。
-**pkg_path**: 包路径（可选）。
+**-h, --help**: 显示 `remove` 命令的帮助信息。  
+**pkg_path**: 包路径（可选）。  
 
 ### 发布当前包
 
@@ -88,10 +88,10 @@ qpm remove [-h] [pkg_path]
 qpm publish [-h] [-v version] [-m message] [-d version]
 ```
 
-**-h, --help**: 显示 `publish` 命令的帮助信息。
-**-v, --version version**: 发布的版本。
-**-m, --message message**: 发布版本的消息（可选）。
-**-d, --delete version**: 删除已发布的版本。
+**-h, --help**: 显示 `publish` 命令的帮助信息。  
+**-v, --version version**: 发布的版本。  
+**-m, --message message**: 发布版本的消息（可选）。  
+**-d, --delete version**: 删除已发布的版本。  
 
 ### 列出本地或远程包信息
 
@@ -99,11 +99,11 @@ qpm publish [-h] [-v version] [-m message] [-d version]
 qpm ls [-h] [-l] [-r] [-p remote_pkg_name] [-v version]
 ```
 
-**-h, --help**: 显示 `ls` 命令的帮助信息。
-**-l, --local**: 列出本地包信息。
-**-r, --remote**: 列出远程包。
-**-p, --package remote_pkg_name**: 列出远程包的依赖项。
-**-v, --version version**: 要列出的远程包的版本（可选）。
+**-h, --help**: 显示 `ls` 命令的帮助信息。  
+**-l, --local**: 列出本地包信息。  
+**-r, --remote**: 列出远程包。  
+**-p, --package remote_pkg_name**: 列出远程包的依赖项。  
+**-v, --version version**: 要列出的远程包的版本（可选）。  
 
 ### 显示本地或远程包发布的所有版本
 
@@ -111,8 +111,8 @@ qpm ls [-h] [-l] [-r] [-p remote_pkg_name] [-v version]
 qpm release [-h] [pkg_name_or_url]
 ```
 
-**-h, --help**: 显示 `release` 命令的帮助信息。
-**pkg_name_or_url**: 包名称或 URL（可选）。
+**-h, --help**: 显示 `release` 命令的帮助信息。  
+**pkg_name_or_url**: 包名称或 URL（可选）。  
 
 ### 部署项目或包
 
@@ -120,8 +120,8 @@ qpm release [-h] [pkg_name_or_url]
 qpm deploy [-h] [-v version]
 ```
 
-**-h, --help**: 显示 `deploy` 命令的帮助信息。
-**-v, --version version**: 项目或包版本（可选）。
+**-h, --help**: 显示 `deploy` 命令的帮助信息。  
+**-v, --version version**: 项目或包版本（可选）。  
 
 ### 查看包版本
 
@@ -129,7 +129,7 @@ qpm deploy [-h] [-v version]
 qpm version [-h]
 ```
 
-**-h, --help**: 显示 `version` 命令的帮助信息。
+**-h, --help**: 显示 `version` 命令的帮助信息。  
 
 ### 配置项目
 
@@ -137,10 +137,10 @@ qpm version [-h]
 qpm config [-h] [-g] key [value]
 ```
 
-**-h, --help**: 显示 `config` 命令的帮助信息。
-**-g, --global-config**: 全局配置（可选）。
-**key**: 配置项的键。
-**value**: 配置项的值（可选）。
+**-h, --help**: 显示 `config` 命令的帮助信息。  
+**-g, --global-config**: 全局配置（可选）。  
+**key**: 配置项的键。  
+**value**: 配置项的值（可选）。  
 
 > - 项目配置的优先级，从高到低分别为：本地配置 > 全局配置 > 默认配置。
 > - 用户的本地或全局配置将会覆盖默认配置。
